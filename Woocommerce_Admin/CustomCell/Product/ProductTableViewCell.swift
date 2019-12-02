@@ -3,7 +3,7 @@
 //  Woocommerce_Admin
 //
 //  Created by Lewis Halliday on 02/12/2019.
-//  Copyright © 2019 IT-Developers. All rights reserved.
+//  Copyright © 2019 Halliday. All rights reserved.
 //
 
 import UIKit

@@ -19,7 +19,6 @@
 		27A274EC238C1A5F00E40481 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27A274EA238C1A5F00E40481 /* LaunchScreen.storyboard */; };
 		27A274F7238C269600E40481 /* Orders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A274F6238C269600E40481 /* Orders.swift */; };
 		27A274F9238C2A7900E40481 /* OrdersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A274F8238C2A7900E40481 /* OrdersTableViewController.swift */; };
-		27A274FD238C328000E40481 /* keys.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 27A274FC238C328000E40481 /* keys.rtf */; };
 		27D03309238D452B009B6437 /* UserOrderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D03308238D452B009B6437 /* UserOrderTableViewController.swift */; };
 		27D0330B238D4550009B6437 /* CustomersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D0330A238D4550009B6437 /* CustomersTableViewController.swift */; };
 		27D0330F238D4666009B6437 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D0330E238D4666009B6437 /* Constants.swift */; };
@@ -43,7 +42,6 @@
 		27A274ED238C1A5F00E40481 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27A274F6238C269600E40481 /* Orders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Orders.swift; sourceTree = "<group>"; };
 		27A274F8238C2A7900E40481 /* OrdersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersTableViewController.swift; sourceTree = "<group>"; };
-		27A274FC238C328000E40481 /* keys.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = keys.rtf; sourceTree = "<group>"; };
 		27D03308238D452B009B6437 /* UserOrderTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserOrderTableViewController.swift; sourceTree = "<group>"; };
 		27D0330A238D4550009B6437 /* CustomersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomersTableViewController.swift; sourceTree = "<group>"; };
 		27D0330E238D4666009B6437 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -144,7 +142,6 @@
 				27A274DD238C1A5E00E40481 /* AppDelegate.swift */,
 				27A274E8238C1A5F00E40481 /* Assets.xcassets */,
 				27A274ED238C1A5F00E40481 /* Info.plist */,
-				27A274FC238C328000E40481 /* keys.rtf */,
 				270C19B92390120F00B05DF0 /* Colors.xcassets */,
 			);
 			path = Woocommerce_Admin;
@@ -259,7 +256,6 @@
 				270C19C42395443600B05DF0 /* ProductTableViewCell.xib in Resources */,
 				27A274EC238C1A5F00E40481 /* LaunchScreen.storyboard in Resources */,
 				27A274E9238C1A5F00E40481 /* Assets.xcassets in Resources */,
-				27A274FD238C328000E40481 /* keys.rtf in Resources */,
 				27A274E7238C1A5E00E40481 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -470,14 +466,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MS8FC2CZVJ;
+				DEVELOPMENT_TEAM = DMS7H44E8B;
 				INFOPLIST_FILE = "$(SRCROOT)/Woocommerce_Admin/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "net.it-developers.woocommerce";
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.halliday.woocommerce;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -489,16 +485,17 @@
 			baseConfigurationReference = 7D3186826BD4C6A144AEB7C8 /* Pods-Woocommerce_Admin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MS8FC2CZVJ;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/Woocommerce_Admin/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "net.it-developers.woocommerce";
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.halliday.woocommerce;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
