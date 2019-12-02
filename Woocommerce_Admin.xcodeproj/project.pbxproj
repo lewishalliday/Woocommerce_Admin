@@ -1,0 +1,531 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		27006A8C238F0DEC0038CC96 /* OrderDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27006A8B238F0DEC0038CC96 /* OrderDetailsTableViewController.swift */; };
+		270C19B8238FCF4200B05DF0 /* Generic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270C19B7238FCF4200B05DF0 /* Generic.swift */; };
+		270C19BA2390120F00B05DF0 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 270C19B92390120F00B05DF0 /* Colors.xcassets */; };
+		270C19C32395443600B05DF0 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270C19C12395443600B05DF0 /* ProductTableViewCell.swift */; };
+		270C19C42395443600B05DF0 /* ProductTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 270C19C22395443600B05DF0 /* ProductTableViewCell.xib */; };
+		27A07620238F017100840E9A /* Customers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A0761F238F017100840E9A /* Customers.swift */; };
+		27A274DE238C1A5E00E40481 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A274DD238C1A5E00E40481 /* AppDelegate.swift */; };
+		27A274E7238C1A5E00E40481 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27A274E5238C1A5E00E40481 /* Main.storyboard */; };
+		27A274E9238C1A5F00E40481 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27A274E8238C1A5F00E40481 /* Assets.xcassets */; };
+		27A274EC238C1A5F00E40481 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27A274EA238C1A5F00E40481 /* LaunchScreen.storyboard */; };
+		27A274F7238C269600E40481 /* Orders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A274F6238C269600E40481 /* Orders.swift */; };
+		27A274F9238C2A7900E40481 /* OrdersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A274F8238C2A7900E40481 /* OrdersTableViewController.swift */; };
+		27A274FD238C328000E40481 /* keys.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 27A274FC238C328000E40481 /* keys.rtf */; };
+		27D03309238D452B009B6437 /* UserOrderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D03308238D452B009B6437 /* UserOrderTableViewController.swift */; };
+		27D0330B238D4550009B6437 /* CustomersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D0330A238D4550009B6437 /* CustomersTableViewController.swift */; };
+		27D0330F238D4666009B6437 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D0330E238D4666009B6437 /* Constants.swift */; };
+		27D03311238D46D3009B6437 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D03310238D46D3009B6437 /* APIService.swift */; };
+		27D0F012238EDD6000F25F1C /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D0F011238EDD6000F25F1C /* Spinner.swift */; };
+		9CA01FFDE74EEE5D88ABD151 /* Pods_Woocommerce_Admin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE275AB8F978F867C1E49B65 /* Pods_Woocommerce_Admin.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		27006A8B238F0DEC0038CC96 /* OrderDetailsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailsTableViewController.swift; sourceTree = "<group>"; };
+		270C19B7238FCF4200B05DF0 /* Generic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Generic.swift; sourceTree = "<group>"; };
+		270C19B92390120F00B05DF0 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		270C19C12395443600B05DF0 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
+		270C19C22395443600B05DF0 /* ProductTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductTableViewCell.xib; sourceTree = "<group>"; };
+		27A0761F238F017100840E9A /* Customers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customers.swift; sourceTree = "<group>"; };
+		27A274DA238C1A5E00E40481 /* Woocommerce_Admin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Woocommerce_Admin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		27A274DD238C1A5E00E40481 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		27A274E6238C1A5E00E40481 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		27A274E8238C1A5F00E40481 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		27A274EB238C1A5F00E40481 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		27A274ED238C1A5F00E40481 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27A274F6238C269600E40481 /* Orders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Orders.swift; sourceTree = "<group>"; };
+		27A274F8238C2A7900E40481 /* OrdersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersTableViewController.swift; sourceTree = "<group>"; };
+		27A274FC238C328000E40481 /* keys.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = keys.rtf; sourceTree = "<group>"; };
+		27D03308238D452B009B6437 /* UserOrderTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserOrderTableViewController.swift; sourceTree = "<group>"; };
+		27D0330A238D4550009B6437 /* CustomersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomersTableViewController.swift; sourceTree = "<group>"; };
+		27D0330E238D4666009B6437 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		27D03310238D46D3009B6437 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		27D0F011238EDD6000F25F1C /* Spinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
+		579A1AC5415A50F7D1540A0A /* Pods-Fumecare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fumecare.debug.xcconfig"; path = "Target Support Files/Pods-Fumecare/Pods-Fumecare.debug.xcconfig"; sourceTree = "<group>"; };
+		5B8A912D31C92CF3914D58FF /* Pods-Woocommerce_Admin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Woocommerce_Admin.debug.xcconfig"; path = "Target Support Files/Pods-Woocommerce_Admin/Pods-Woocommerce_Admin.debug.xcconfig"; sourceTree = "<group>"; };
+		7D3186826BD4C6A144AEB7C8 /* Pods-Woocommerce_Admin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Woocommerce_Admin.release.xcconfig"; path = "Target Support Files/Pods-Woocommerce_Admin/Pods-Woocommerce_Admin.release.xcconfig"; sourceTree = "<group>"; };
+		BE275AB8F978F867C1E49B65 /* Pods_Woocommerce_Admin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Woocommerce_Admin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7A5C23CD0484AF9F51B1412 /* Pods-Fumecare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fumecare.release.xcconfig"; path = "Target Support Files/Pods-Fumecare/Pods-Fumecare.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		27A274D7238C1A5E00E40481 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CA01FFDE74EEE5D88ABD151 /* Pods_Woocommerce_Admin.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0159EB6D001FC4D59402841B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE275AB8F978F867C1E49B65 /* Pods_Woocommerce_Admin.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		270C19BF2395441B00B05DF0 /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				270C19C02395442300B05DF0 /* Product */,
+			);
+			path = CustomCell;
+			sourceTree = "<group>";
+		};
+		270C19C02395442300B05DF0 /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				270C19C12395443600B05DF0 /* ProductTableViewCell.swift */,
+				270C19C22395443600B05DF0 /* ProductTableViewCell.xib */,
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
+		27A07621238F036900840E9A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				27A274F8238C2A7900E40481 /* OrdersTableViewController.swift */,
+				27D03308238D452B009B6437 /* UserOrderTableViewController.swift */,
+				27D0330A238D4550009B6437 /* CustomersTableViewController.swift */,
+				27006A8B238F0DEC0038CC96 /* OrderDetailsTableViewController.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		27A07622238F037F00840E9A /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				27A274E5238C1A5E00E40481 /* Main.storyboard */,
+				27A274EA238C1A5F00E40481 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		27A274D1238C1A5E00E40481 = {
+			isa = PBXGroup;
+			children = (
+				27A274DC238C1A5E00E40481 /* Woocommerce_Admin */,
+				27A274DB238C1A5E00E40481 /* Products */,
+				84EADDE193E71315A3BB8C4E /* Pods */,
+				0159EB6D001FC4D59402841B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		27A274DB238C1A5E00E40481 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				27A274DA238C1A5E00E40481 /* Woocommerce_Admin.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		27A274DC238C1A5E00E40481 /* Woocommerce_Admin */ = {
+			isa = PBXGroup;
+			children = (
+				270C19BF2395441B00B05DF0 /* CustomCell */,
+				27A07622238F037F00840E9A /* Storyboards */,
+				27A07621238F036900840E9A /* ViewModels */,
+				27D0F010238EDD5000F25F1C /* Extensions */,
+				27D0330D238D4658009B6437 /* Constants */,
+				27D0330C238D4650009B6437 /* Services */,
+				27A274F3238C1AF000E40481 /* Models */,
+				27A274DD238C1A5E00E40481 /* AppDelegate.swift */,
+				27A274E8238C1A5F00E40481 /* Assets.xcassets */,
+				27A274ED238C1A5F00E40481 /* Info.plist */,
+				27A274FC238C328000E40481 /* keys.rtf */,
+				270C19B92390120F00B05DF0 /* Colors.xcassets */,
+			);
+			path = Woocommerce_Admin;
+			sourceTree = "<group>";
+		};
+		27A274F3238C1AF000E40481 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				27A274F6238C269600E40481 /* Orders.swift */,
+				27A0761F238F017100840E9A /* Customers.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		27D0330C238D4650009B6437 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				27D03310238D46D3009B6437 /* APIService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		27D0330D238D4658009B6437 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				27D0330E238D4666009B6437 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		27D0F010238EDD5000F25F1C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				27D0F011238EDD6000F25F1C /* Spinner.swift */,
+				270C19B7238FCF4200B05DF0 /* Generic.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		84EADDE193E71315A3BB8C4E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				579A1AC5415A50F7D1540A0A /* Pods-Fumecare.debug.xcconfig */,
+				E7A5C23CD0484AF9F51B1412 /* Pods-Fumecare.release.xcconfig */,
+				5B8A912D31C92CF3914D58FF /* Pods-Woocommerce_Admin.debug.xcconfig */,
+				7D3186826BD4C6A144AEB7C8 /* Pods-Woocommerce_Admin.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		27A274D9238C1A5E00E40481 /* Woocommerce_Admin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27A274F0238C1A5F00E40481 /* Build configuration list for PBXNativeTarget "Woocommerce_Admin" */;
+			buildPhases = (
+				07C5DB5E2A12231CED20BB2E /* [CP] Check Pods Manifest.lock */,
+				27A274D6238C1A5E00E40481 /* Sources */,
+				27A274D7238C1A5E00E40481 /* Frameworks */,
+				27A274D8238C1A5E00E40481 /* Resources */,
+				8643221367C6CB4D0A893BFD /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Woocommerce_Admin;
+			productName = Fumecare;
+			productReference = 27A274DA238C1A5E00E40481 /* Woocommerce_Admin.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		27A274D2238C1A5E00E40481 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "IT-Developers";
+				TargetAttributes = {
+					27A274D9238C1A5E00E40481 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 27A274D5238C1A5E00E40481 /* Build configuration list for PBXProject "Woocommerce_Admin" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 27A274D1238C1A5E00E40481;
+			productRefGroup = 27A274DB238C1A5E00E40481 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				27A274D9238C1A5E00E40481 /* Woocommerce_Admin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		27A274D8238C1A5E00E40481 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				270C19BA2390120F00B05DF0 /* Colors.xcassets in Resources */,
+				270C19C42395443600B05DF0 /* ProductTableViewCell.xib in Resources */,
+				27A274EC238C1A5F00E40481 /* LaunchScreen.storyboard in Resources */,
+				27A274E9238C1A5F00E40481 /* Assets.xcassets in Resources */,
+				27A274FD238C328000E40481 /* keys.rtf in Resources */,
+				27A274E7238C1A5E00E40481 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		07C5DB5E2A12231CED20BB2E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Woocommerce_Admin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8643221367C6CB4D0A893BFD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Woocommerce_Admin/Pods-Woocommerce_Admin-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Woocommerce_Admin/Pods-Woocommerce_Admin-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Woocommerce_Admin/Pods-Woocommerce_Admin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		27A274D6238C1A5E00E40481 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27D0F012238EDD6000F25F1C /* Spinner.swift in Sources */,
+				27A274F9238C2A7900E40481 /* OrdersTableViewController.swift in Sources */,
+				27A274DE238C1A5E00E40481 /* AppDelegate.swift in Sources */,
+				27A07620238F017100840E9A /* Customers.swift in Sources */,
+				27006A8C238F0DEC0038CC96 /* OrderDetailsTableViewController.swift in Sources */,
+				27D0330B238D4550009B6437 /* CustomersTableViewController.swift in Sources */,
+				27D03311238D46D3009B6437 /* APIService.swift in Sources */,
+				270C19C32395443600B05DF0 /* ProductTableViewCell.swift in Sources */,
+				27A274F7238C269600E40481 /* Orders.swift in Sources */,
+				27D03309238D452B009B6437 /* UserOrderTableViewController.swift in Sources */,
+				27D0330F238D4666009B6437 /* Constants.swift in Sources */,
+				270C19B8238FCF4200B05DF0 /* Generic.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		27A274E5238C1A5E00E40481 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27A274E6238C1A5E00E40481 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		27A274EA238C1A5F00E40481 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27A274EB238C1A5F00E40481 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		27A274EE238C1A5F00E40481 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		27A274EF238C1A5F00E40481 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		27A274F1238C1A5F00E40481 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B8A912D31C92CF3914D58FF /* Pods-Woocommerce_Admin.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MS8FC2CZVJ;
+				INFOPLIST_FILE = "$(SRCROOT)/Woocommerce_Admin/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "net.it-developers.woocommerce";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		27A274F2238C1A5F00E40481 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D3186826BD4C6A144AEB7C8 /* Pods-Woocommerce_Admin.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MS8FC2CZVJ;
+				INFOPLIST_FILE = "$(SRCROOT)/Woocommerce_Admin/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "net.it-developers.woocommerce";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		27A274D5238C1A5E00E40481 /* Build configuration list for PBXProject "Woocommerce_Admin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27A274EE238C1A5F00E40481 /* Debug */,
+				27A274EF238C1A5F00E40481 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27A274F0238C1A5F00E40481 /* Build configuration list for PBXNativeTarget "Woocommerce_Admin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27A274F1238C1A5F00E40481 /* Debug */,
+				27A274F2238C1A5F00E40481 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 27A274D2238C1A5E00E40481 /* Project object */;
+}
