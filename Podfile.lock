@@ -1,16 +1,20 @@
 PODS:
   - RappleProgressHUD (4.1)
+  - SideMenu (6.4.7)
 
 DEPENDENCIES:
   - RappleProgressHUD
+  - SideMenu
 
 SPEC REPOS:
   trunk:
     - RappleProgressHUD
+    - SideMenu
 
 SPEC CHECKSUMS:
   RappleProgressHUD: f29bc5dc5f9834c2caa9c2ae21ba11f3ff2b5a85
+  SideMenu: 928a015669c3afc201e1fe3a87f1b0bc8993a664
 
-PODFILE CHECKSUM: b4c9ab44fd5aafd55b23e0195160ddb71ba10da9
+PODFILE CHECKSUM: e616a6c4039918da0ba16879c81a6c3b082ea576
 
 COCOAPODS: 1.8.4

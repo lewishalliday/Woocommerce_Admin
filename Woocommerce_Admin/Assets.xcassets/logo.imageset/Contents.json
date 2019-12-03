@@ -2,12 +2,12 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "FumeCare-Logo-CMYK.png",
+      "filename" : "woocommerce_logo.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "FumeCare-Logo-White.png",
+      "filename" : "woocommerce_logo_white.png",
       "appearances" : [
         {
           "appearance" : "luminosity",

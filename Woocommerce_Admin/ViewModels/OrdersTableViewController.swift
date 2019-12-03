@@ -72,11 +72,11 @@ class OrdersTableViewController: UITableViewController {
         switch (indexPath.section) {
         case 0:
             cell.textLabel?.text = String("#\(self.pendingQuotes[indexPath.row].id)")
-            cell.textLabel?.textColor = UIColor.init(named: "orderNumber")
+            cell.textLabel?.textColor = UIColor.customColor(.orderNumber)
             cell.detailTextLabel?.text = String("\(self.pendingQuotes[indexPath.row].billing.first_name) \(self.pendingQuotes[indexPath.row].billing.last_name)")
         case 1:
             cell.textLabel?.text = String("#\(self.completeQuotes[indexPath.row].id)")
-            cell.textLabel?.textColor = UIColor.init(named: "orderNumber")
+            cell.textLabel?.textColor = UIColor.customColor(.orderNumber)
             cell.detailTextLabel?.text = String("\(self.completeQuotes[indexPath.row].billing.first_name) \(self.completeQuotes[indexPath.row].billing.last_name)")
         default:
             break
@@ -114,18 +114,21 @@ class OrdersTableViewController: UITableViewController {
                 print(orders)
                 //self.tableData = orders
                 for items in orders{
-                    if items.status == OrderStatus.PaymentPending.rawValue { self.pendingQuotes.append(items) }
-                    else if items.status == OrderStatus.Completed.rawValue { self.completeQuotes.append(items) }
+                    if items.status == OrderStatus.Processing.rawValue { self.pendingQuotes.append(items) }
+					else if items.status == OrderStatus.Cancelled.rawValue { self.completeQuotes.append(items) }
                 }
                 DispatchQueue.main.async {
                     self.tableView.reloadData()
                     self.removeSpinner(indicator: .none)
                     self.refreshControl?.endRefreshing()
                 }
-            case .failure(let err):
-                self.removeSpinner(indicator: .failed, completionLabel: "Failed loading data", completionTimeout: 1.0)
-                print("Failed to fetch", err)
-            }
+				case .failure(let err):
+					DispatchQueue.main.async {
+						self.removeSpinner(indicator: .failed, completionLabel: "Failed loading data", completionTimeout: 1.0)
+						self.refreshControl?.endRefreshing()
+					}
+					print("Failed to fetch", err)
+			}
         }
     }
 }

@@ -48,7 +48,6 @@ func GetCustomers(customerId: String?, completion: @escaping (Result<[Customers]
     request.addValue("application/json", forHTTPHeaderField: "Content-Type")
     
     URLSession.shared.dataTask(with: request) { (data, response, error) in
-        
         if let error = error {
             completion(.failure(error))
             return
@@ -59,7 +58,26 @@ func GetCustomers(customerId: String?, completion: @escaping (Result<[Customers]
         } catch let jsonError {
             completion(.failure(jsonError))
         }
-        
     }.resume()
+}
+
+// MARK: - GET Customers
+func GetProducts(productID: String = "", completion: @escaping (Result<[Prouducts], Error>) -> ()) {
+	var request = URLRequest(url: URL(string: Constants.APIUrl + "products/" + productID)!)
+	request.httpMethod = "GET"
+	request.setValue("Basic \(base64LoginString)", forHTTPHeaderField: "Authorization")
+	request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+	URLSession.shared.dataTask(with: request) { (data, response, error) in
+		if let error = error {
+			completion(.failure(error))
+			return
+		}
+		do {
+			let products = try JSONDecoder().decode([Prouducts].self, from: data!)
+			completion(.success(products))
+		} catch let jsonError {
+			completion(.failure(jsonError))
+		}
+	}.resume()
 }
 

@@ -8,6 +8,7 @@
 
 import UIKit
 import MessageUI
+import SideMenu
 
 extension UIViewController {
 	func alert(message: String, title: String = "", confirmBtn: String = "OK", style: UIAlertController.Style = .alert) {
@@ -47,5 +48,17 @@ extension UIViewController {
 	
 	@objc(mailComposeController:didFinishWithResult:error:) func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
 		controller.dismiss(animated: true)
+	}
+	
+	@objc func ShowMenu()
+	{
+		let menu = storyboard!.instantiateViewController(withIdentifier: "Menu") as! SideMenuNavigationController
+		menu.presentationStyle = .menuSlideIn
+		menu.presentationStyle.onTopShadowOpacity = 0.3
+		menu.presentationStyle.onTopShadowColor = .white
+		menu.blurEffectStyle = .none
+		menu.animationOptions = .curveEaseInOut
+		menu.pushStyle = .replace
+		present(menu, animated: true, completion: nil)
 	}
 }
