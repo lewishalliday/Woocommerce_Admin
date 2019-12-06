@@ -22,8 +22,7 @@ class OrdersTableViewController: UITableViewController {
         let refreshControl = UIRefreshControl()
         refreshControl.addTarget(self, action:  #selector(refreshTable), for: .valueChanged)
         self.refreshControl = refreshControl
-        
-        print(OrderStatus.PaymentPending.rawValue)
+
     }
     
     @objc func refreshTable() {
@@ -108,11 +107,11 @@ class OrdersTableViewController: UITableViewController {
     // MARK: - Load order data
     private func LoadOrders(){
         self.showSpinner()
-        GetOrders(orderNum: nil, customerId: CustomerId) { (res) in
+		self.pendingQuotes.removeAll()
+		self.completeQuotes.removeAll()
+		GetOrders(orderNum: nil, customerId: CustomerId) { (res) in
             switch res {
             case .success(let orders):
-                print(orders)
-                //self.tableData = orders
                 for items in orders{
                     if items.status == OrderStatus.Processing.rawValue { self.pendingQuotes.append(items) }
 					else if items.status == OrderStatus.Cancelled.rawValue { self.completeQuotes.append(items) }
