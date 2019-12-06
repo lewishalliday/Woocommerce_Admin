@@ -16,7 +16,7 @@ class OrderDetailsTableViewController: UITableViewController, MFMailComposeViewC
 	var orderDetails: [(String, String)] = []
 	var billingDetails: [(String, String)] = []
 	var productDetails: [(String, String)] = []
-	
+
 	// append a value
     
     override func viewDidLoad() {

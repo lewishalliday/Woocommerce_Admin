@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftKeychainWrapper
 
 
 @UIApplicationMain
@@ -15,6 +16,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	var window: UIWindow?
 	
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+		
+		//Temp Keys
+//		KeychainWrapper.standard.set("Halliday", forKey: "storeName")
+//		KeychainWrapper.standard.set("https://api.halliday.xyz/wp-json/wc/v3/", forKey: "apiUrl")
+//		KeychainWrapper.standard.set("ck_021d9f5309e1d8ebc952582c38545997a40e1bf8", forKey: "apiKey")
+//		KeychainWrapper.standard.set("cs_0105a3abe33f2dfae179908351196db816b7fa08", forKey: "apiPassword")
+//		
 		UITableView.appearance().backgroundColor = UIColor.customColor(.tableview)
 		UITableViewCell.appearance().backgroundColor = UIColor.customColor(.tableview)
 		
