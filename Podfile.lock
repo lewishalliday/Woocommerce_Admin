@@ -1,20 +1,24 @@
 PODS:
   - RappleProgressHUD (4.1)
   - SideMenu (6.4.7)
+  - SwiftKeychainWrapper (3.4.0)
 
 DEPENDENCIES:
   - RappleProgressHUD
   - SideMenu
+  - SwiftKeychainWrapper
 
 SPEC REPOS:
   trunk:
     - RappleProgressHUD
     - SideMenu
+    - SwiftKeychainWrapper
 
 SPEC CHECKSUMS:
   RappleProgressHUD: f29bc5dc5f9834c2caa9c2ae21ba11f3ff2b5a85
   SideMenu: 928a015669c3afc201e1fe3a87f1b0bc8993a664
+  SwiftKeychainWrapper: 6fc49fbf7d4a6b0772917acb0e53a1639f6078d6
 
-PODFILE CHECKSUM: e616a6c4039918da0ba16879c81a6c3b082ea576
+PODFILE CHECKSUM: 1041043f04615b05df016eeefb1d03151bf7c948
 
 COCOAPODS: 1.8.4
