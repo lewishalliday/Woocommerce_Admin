@@ -90,12 +90,12 @@ class OrdersTableViewController: UITableViewController {
             switch section {
             case 0:
                 let orderDetailsVC = segue.destination as? OrderDetailsTableViewController
-                orderDetailsVC?.title = "Order #\(String(self.pendingQuotes[self.tableView.indexPathForSelectedRow!.row].id))"
+                orderDetailsVC?.title = "#\(String(self.pendingQuotes[self.tableView.indexPathForSelectedRow!.row].id))"
                 orderDetailsVC?.tableData.append(self.pendingQuotes[self.tableView.indexPathForSelectedRow!.row])
                 break
             case 1:
                 let orderDetailsVC = segue.destination as? OrderDetailsTableViewController
-                orderDetailsVC?.title = "Order #\(String(self.completeQuotes[self.tableView.indexPathForSelectedRow!.row].id))"
+                orderDetailsVC?.title = "#\(String(self.completeQuotes[self.tableView.indexPathForSelectedRow!.row].id))"
                 orderDetailsVC?.tableData.append(self.completeQuotes[self.tableView.indexPathForSelectedRow!.row])
             default:
                 break
@@ -109,8 +109,8 @@ class OrdersTableViewController: UITableViewController {
         self.showSpinner()
 		self.pendingQuotes.removeAll()
 		self.completeQuotes.removeAll()
-		GetOrders(orderNum: nil, customerId: CustomerId) { (res) in
-            switch res {
+		GetOrders(orderNum: nil, customerId: CustomerId) { (result) in
+            switch result {
             case .success(let orders):
                 for items in orders{
                     if items.status == OrderStatus.Processing.rawValue { self.pendingQuotes.append(items) }
