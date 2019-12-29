@@ -18,11 +18,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 		
 		//Temp Keys
-//		KeychainWrapper.standard.set("Halliday", forKey: "storeName")
-//		KeychainWrapper.standard.set("https://api.halliday.xyz/wp-json/wc/v3/", forKey: "apiUrl")
-//		KeychainWrapper.standard.set("ck_021d9f5309e1d8ebc952582c38545997a40e1bf8", forKey: "apiKey")
-//		KeychainWrapper.standard.set("cs_0105a3abe33f2dfae179908351196db816b7fa08", forKey: "apiPassword")
-//		
+		KeychainWrapper.standard.set("Halliday", forKey: "storeName")
+		KeychainWrapper.standard.set("https://api.halliday.xyz/wp-json/wc/v3/", forKey: "apiUrl")
+		KeychainWrapper.standard.set("ck_021d9f5309e1d8ebc952582c38545997a40e1bf8", forKey: "apiKey")
+		KeychainWrapper.standard.set("cs_0105a3abe33f2dfae179908351196db816b7fa08", forKey: "apiPassword")
+		
 		UITableView.appearance().backgroundColor = UIColor.customColor(.tableview)
 		UITableViewCell.appearance().backgroundColor = UIColor.customColor(.tableview)
 		
@@ -46,6 +46,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		UITabBar.appearance().tintColor = UIColor.customColor(.brandColor)
 		UILabel.appearance().textColor = UIColor.customColor(.text)
 		UILabel.appearance().font = UIFont(name: "Avenir Next", size: 16)
+        UIRefreshControl.appearance().tintColor = .white
 		
 		return true
 	}
