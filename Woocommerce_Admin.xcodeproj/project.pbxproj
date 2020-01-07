@@ -14,6 +14,8 @@
 		270C19C42395443600B05DF0 /* ProductTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 270C19C22395443600B05DF0 /* ProductTableViewCell.xib */; };
 		270C19C62396585000B05DF0 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270C19C52396585000B05DF0 /* Color.swift */; };
 		270C19C8239659AA00B05DF0 /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270C19C7239659AA00B05DF0 /* Products.swift */; };
+		277B327123C521EC0009D019 /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277B327023C521EC0009D019 /* ProductsViewController.swift */; };
+		277B327723C5254C0009D019 /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277B327623C5254C0009D019 /* ProductCollectionViewCell.swift */; };
 		27A07620238F017100840E9A /* Customers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A0761F238F017100840E9A /* Customers.swift */; };
 		27A274DE238C1A5E00E40481 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A274DD238C1A5E00E40481 /* AppDelegate.swift */; };
 		27A274E7238C1A5E00E40481 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27A274E5238C1A5E00E40481 /* Main.storyboard */; };
@@ -37,6 +39,8 @@
 		270C19C22395443600B05DF0 /* ProductTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductTableViewCell.xib; sourceTree = "<group>"; };
 		270C19C52396585000B05DF0 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		270C19C7239659AA00B05DF0 /* Products.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
+		277B327023C521EC0009D019 /* ProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
+		277B327623C5254C0009D019 /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
 		27A0761F238F017100840E9A /* Customers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customers.swift; sourceTree = "<group>"; };
 		27A274DA238C1A5E00E40481 /* Woocommerce_Admin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Woocommerce_Admin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27A274DD238C1A5E00E40481 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +85,7 @@
 		270C19BF2395441B00B05DF0 /* CustomCell */ = {
 			isa = PBXGroup;
 			children = (
+				277B327523C5253B0009D019 /* Product Collection View */,
 				270C19C02395442300B05DF0 /* Product */,
 			);
 			path = CustomCell;
@@ -95,6 +100,14 @@
 			path = Product;
 			sourceTree = "<group>";
 		};
+		277B327523C5253B0009D019 /* Product Collection View */ = {
+			isa = PBXGroup;
+			children = (
+				277B327623C5254C0009D019 /* ProductCollectionViewCell.swift */,
+			);
+			path = "Product Collection View";
+			sourceTree = "<group>";
+		};
 		27A07621238F036900840E9A /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +115,7 @@
 				27D03308238D452B009B6437 /* UserOrderTableViewController.swift */,
 				27D0330A238D4550009B6437 /* CustomersTableViewController.swift */,
 				27006A8B238F0DEC0038CC96 /* OrderDetailsTableViewController.swift */,
+				277B327023C521EC0009D019 /* ProductsViewController.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -317,6 +331,7 @@
 			files = (
 				27D0F012238EDD6000F25F1C /* Spinner.swift in Sources */,
 				27A274F9238C2A7900E40481 /* OrdersTableViewController.swift in Sources */,
+				277B327723C5254C0009D019 /* ProductCollectionViewCell.swift in Sources */,
 				27A274DE238C1A5E00E40481 /* AppDelegate.swift in Sources */,
 				270C19C8239659AA00B05DF0 /* Products.swift in Sources */,
 				27A07620238F017100840E9A /* Customers.swift in Sources */,
@@ -324,6 +339,7 @@
 				27006A8C238F0DEC0038CC96 /* OrderDetailsTableViewController.swift in Sources */,
 				27D0330B238D4550009B6437 /* CustomersTableViewController.swift in Sources */,
 				27D03311238D46D3009B6437 /* APIService.swift in Sources */,
+				277B327123C521EC0009D019 /* ProductsViewController.swift in Sources */,
 				270C19C32395443600B05DF0 /* ProductTableViewCell.swift in Sources */,
 				27A274F7238C269600E40481 /* Orders.swift in Sources */,
 				27D03309238D452B009B6437 /* UserOrderTableViewController.swift in Sources */,

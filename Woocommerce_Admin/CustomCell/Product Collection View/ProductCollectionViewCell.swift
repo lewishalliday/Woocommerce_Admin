@@ -1,0 +1,42 @@
+//
+//  ProductCollectionViewCell.swift
+//  Woocommerce_Admin
+//
+//  Created by Lewis Halliday on 07/01/2020.
+//  Copyright © 2020 IT-Developers. All rights reserved.
+//
+
+import Foundation
+import UIKit
+
+class ProductCollectionViewCell: UICollectionViewCell {
+    
+    var data: CustomData? {
+        didSet {
+            guard let data = data else { return }
+            backgroundImage.image = data.image
+        }
+    }
+    
+    fileprivate let backgroundImage: UIImageView = {
+       let productImage = UIImageView()
+        productImage.translatesAutoresizingMaskIntoConstraints = false
+        productImage.contentMode = .scaleAspectFill
+        productImage.clipsToBounds = true
+        productImage.layer.cornerRadius = 12
+        return productImage
+    }()
+    
+    override init(frame: CGRect) {
+        super.init(frame: .zero)
+        contentView.addSubview(backgroundImage)
+        backgroundImage.topAnchor.constraint(equalTo: contentView.topAnchor).isActive = true
+        backgroundImage.leadingAnchor.constraint(equalTo: contentView.leadingAnchor).isActive = true
+        backgroundImage.trailingAnchor.constraint(equalTo: contentView.trailingAnchor).isActive = true
+        backgroundImage.bottomAnchor.constraint(equalTo: contentView.bottomAnchor).isActive = true
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+}
