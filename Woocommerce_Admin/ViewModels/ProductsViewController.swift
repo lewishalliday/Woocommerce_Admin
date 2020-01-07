@@ -8,33 +8,32 @@
 
 import UIKit
 
-struct CustomData{
+struct ProductData{
     var title: String
     var image: UIImage
-    var url: String
+    var id: String
 }
 
 
 class ProductsViewController: UIViewController {
-    
-    let data = [
-        CustomData(title: "Image 1", image: #imageLiteral(resourceName: "image1"), url: "string"),
-        CustomData(title: "Image 2", image: #imageLiteral(resourceName: "image2"), url: "string"),
-        CustomData(title: "Image 3", image: #imageLiteral(resourceName: "image3"), url: "string")
+
+    let Products = [
+        ProductData(title: "Image 1", image: #imageLiteral(resourceName: "image1"), id: "string"),
+        ProductData(title: "Image 2", image: #imageLiteral(resourceName: "image2"), id: "string"),
+        ProductData(title: "Image 3", image: #imageLiteral(resourceName: "image3"), id: "string")
     ]
     
     fileprivate let collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
-        let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
-        cv.translatesAutoresizingMaskIntoConstraints = false
-        cv.register(ProductCollectionViewCell.self, forCellWithReuseIdentifier: "cell")
-        return cv
+        let ProductCollectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        ProductCollectionView.translatesAutoresizingMaskIntoConstraints = false
+        ProductCollectionView.register(ProductCollectionViewCell.self, forCellWithReuseIdentifier: "cell")
+        return ProductCollectionView
     }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         view.addSubview(collectionView)
         
         if #available(iOS 11.0, *) {
@@ -61,12 +60,12 @@ extension ProductsViewController: UICollectionViewDelegateFlowLayout, UICollecti
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return data.count
+        return Products.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! ProductCollectionViewCell
-        cell.data = self.data[indexPath.row]
+        cell.data = self.Products[indexPath.row]
         return cell
     }
     
