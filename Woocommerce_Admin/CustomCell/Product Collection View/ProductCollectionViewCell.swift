@@ -16,7 +16,7 @@ class ProductCollectionViewCell: UICollectionViewCell {
         didSet {
             guard let data = data else { return }
             backgroundImage.image = data.image
-            title.text = data.title
+            
         }
     }
     
@@ -31,6 +31,9 @@ class ProductCollectionViewCell: UICollectionViewCell {
     
     fileprivate let title: UILabel = {
         let ProductTitle = UILabel()
+        ProductTitle.text = "Test"
+        ProductTitle.textColor = .blue
+        ProductTitle.font = UIFont(name: "Arial", size: 20)
         return ProductTitle
     }()
     

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CollectionViewShelfLayout
 
 struct ProductData{
     var title: String
@@ -24,8 +25,9 @@ class ProductsViewController: UIViewController {
     ]
     
     fileprivate let collectionView: UICollectionView = {
-        let layout = UICollectionViewFlowLayout()
-        layout.scrollDirection = .horizontal
+        let layout = CollectionViewShelfLayout()
+        layout.cellSize = CGSize(width: 100, height: 180)
+        //layout.scrollDirection = .horizontal
         let ProductCollectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         ProductCollectionView.translatesAutoresizingMaskIntoConstraints = false
         ProductCollectionView.register(ProductCollectionViewCell.self, forCellWithReuseIdentifier: "cell")
@@ -64,10 +66,25 @@ extension ProductsViewController: UICollectionViewDelegateFlowLayout, UICollecti
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! ProductCollectionViewCell
-        cell.data = self.Products[indexPath.row]
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! AppStoreCollectionViewCell
+        cell.appNameLabel.text = "test"
+        cell.appPriceLabel.text = "£20"
+        
         return cell
     }
     
     
+}
+
+class AppStoreCollectionViewCell: UICollectionViewCell {
+  @IBOutlet weak var appIconImageView: UIImageView!
+  @IBOutlet weak var appNameLabel: UILabel!
+  @IBOutlet weak var appPriceLabel: UILabel!
+  
+  override func awakeFromNib() {
+    super.awakeFromNib()
+    
+    appIconImageView.layer.cornerRadius = 16.0
+    appIconImageView.layer.masksToBounds = true
+  }
 }

@@ -292,58 +292,6 @@
             </objects>
             <point key="canvasLocation" x="3169.5652173913045" y="318.75"/>
         </scene>
-        <!--Table View Controller-->
-        <scene sceneID="Od2-tz-Dir">
-            <objects>
-                <tableViewController id="0ly-2c-8n8" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="BrL-28-fXM">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="xmh-wN-Cd4">
-                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xmh-wN-Cd4" id="kUF-Wb-2C8">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="0ly-2c-8n8" id="WIu-AQ-boC"/>
-                            <outlet property="delegate" destination="0ly-2c-8n8" id="CIf-Yk-G3p"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" id="TBN-C8-okX"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8NT-cc-6yp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4522" y="-485"/>
-        </scene>
-        <!--Side Menu Navigation Controller-->
-        <scene sceneID="wEw-eE-8cL">
-            <objects>
-                <navigationController storyboardIdentifier="Menu" id="sDD-4Z-FJb" customClass="SideMenuNavigationController" customModule="SideMenu" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="QUP-Hf-pFb"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="k21-bD-gHA">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="boolean" keyPath="leftSide" value="YES"/>
-                        <userDefinedRuntimeAttribute type="number" keyPath="statusBarEndAlpha">
-                            <real key="value" value="0.0"/>
-                        </userDefinedRuntimeAttribute>
-                    </userDefinedRuntimeAttributes>
-                    <connections>
-                        <segue destination="0ly-2c-8n8" kind="relationship" relationship="rootViewController" id="gXo-J2-cjc"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="b3e-ff-3yz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3604" y="-485"/>
-        </scene>
         <!--Orders-->
         <scene sceneID="0xG-Oe-836">
             <objects>

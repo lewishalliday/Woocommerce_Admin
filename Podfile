@@ -6,6 +6,7 @@ target 'Woocommerce_Admin' do
   use_frameworks!
   pod "RappleProgressHUD"
   pod 'SwiftKeychainWrapper'
+  pod 'CollectionViewShelfLayout'
   # Pods for Woocommerce Admin
 
 end
