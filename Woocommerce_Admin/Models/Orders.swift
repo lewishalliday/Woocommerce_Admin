@@ -1,8 +1,10 @@
-// This file was generated from JSON Schema using quicktype, do not modify it directly.
-// To parse the JSON, add this file to your project and do:
 //
-//   let order = try? newJSONDecoder().decode(Order.self, from: jsonData)
-
+//  Orders.swift
+//  Woocommerce_Admin
+//
+//  Created by Lewis Halliday on 27/11/2019.
+//  Copyright © 2019 Halliday. All rights reserved.
+//
 struct Orders: Decodable {
     let id: Int
     let currency: String
