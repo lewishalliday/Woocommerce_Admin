@@ -7,7 +7,6 @@ target 'Woocommerce_Admin' do
   pod "RappleProgressHUD"
   pod 'SwiftKeychainWrapper'
   pod 'CollectionViewShelfLayout'
-  pod 'VegaScrollFlowLayout'
   # Pods for Woocommerce Admin
 
 end

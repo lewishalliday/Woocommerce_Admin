@@ -61,7 +61,7 @@ func GetCustomers(customerId: String?, completion: @escaping (Result<[Customers]
     }.resume()
 }
 
-// MARK: - GET Customers
+// MARK: - GET Products
 func GetProducts(productID: String = "", completion: @escaping (Result<[Prouducts], Error>) -> ()) {
 	var request = URLRequest(url: URL(string: Constants.APIUrl + "products/" + productID)!)
 	request.httpMethod = "GET"

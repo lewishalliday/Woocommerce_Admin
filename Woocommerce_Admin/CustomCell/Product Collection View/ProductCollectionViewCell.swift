@@ -12,11 +12,11 @@ import UIKit
 class ProductCollectionViewCell: UICollectionViewCell {
     
     
-    var data: ProductData? {
+    var data: Prouducts? {
         didSet {
             guard let data = data else { return }
-            backgroundImage.image = data.image
-            
+            //backgroundImage.image
+            backgroundImage.downloaded(from: data.images[0].src)
         }
     }
     

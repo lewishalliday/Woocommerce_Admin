@@ -2,27 +2,23 @@ PODS:
   - CollectionViewShelfLayout (0.6.6)
   - RappleProgressHUD (4.1)
   - SwiftKeychainWrapper (3.4.0)
-  - VegaScrollFlowLayout (1.1)
 
 DEPENDENCIES:
   - CollectionViewShelfLayout
   - RappleProgressHUD
   - SwiftKeychainWrapper
-  - VegaScrollFlowLayout
 
 SPEC REPOS:
   trunk:
     - CollectionViewShelfLayout
     - RappleProgressHUD
     - SwiftKeychainWrapper
-    - VegaScrollFlowLayout
 
 SPEC CHECKSUMS:
   CollectionViewShelfLayout: 2b5d71b0f30bde4d2e57804837e7e5cecaba44d6
   RappleProgressHUD: f29bc5dc5f9834c2caa9c2ae21ba11f3ff2b5a85
   SwiftKeychainWrapper: 6fc49fbf7d4a6b0772917acb0e53a1639f6078d6
-  VegaScrollFlowLayout: 9158061f29179147755f937c2b21693fc5dbbac3
 
-PODFILE CHECKSUM: b6e9498fb98427176a22aca26c4cff18fcc2a1cd
+PODFILE CHECKSUM: 764545d4817f7e6e7fd8cc07a1c1a425b18544ec
 
 COCOAPODS: 1.8.4
