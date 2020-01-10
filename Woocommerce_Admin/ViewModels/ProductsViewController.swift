@@ -24,10 +24,12 @@ class ProductsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.addSubview(collectionView)
         
+        //Load Products
         LoadProducts()
         
+        //Setup Collection View
+        view.addSubview(collectionView)
         if #available(iOS 11.0, *) {
             collectionView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 30).isActive = true
             collectionView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 0).isActive = true
@@ -52,6 +54,7 @@ class ProductsViewController: UIViewController {
             switch result {
             case .success(let orders):
                 for items in orders{
+                    //Add all products returned in from the api call to the product array.
                     self.product.append(items)
                 }
                 DispatchQueue.main.async {
